@@ -24,7 +24,7 @@ app.options("*", Cors());
 app.use("/", Route);
 app.use(exp.static("uploads"));
 
-const atlasUrl = "mongodb+srv://code:NbtMDO032UHx2y2a@cluster0.pbwkm6s.mongodb.net/Dealsdry?retryWrites=true&w=majority&appName=Cluster0";
+const atlasUrl = "process.env.ATLAS";
 
 mong.connect(atlasUrl)
     .then(res => {
