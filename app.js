@@ -7,7 +7,7 @@ const bcry = require("bcryptjs");
 const Route = require("./router");
 
 const corsOptions = {
-    origin: "http://localhost:3000",
+    origin: "https://employreact.onrender.com",
     method: "GET, POST, PUT, DELETE",
     credentials: true,
     optionSuccessStatus: 200,
